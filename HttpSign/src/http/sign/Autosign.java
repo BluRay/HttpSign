@@ -75,8 +75,8 @@ public class Autosign extends TimerTask{
 		        if (!("0000".equals(codenum))){
 		        	HttpPost httppost = new HttpPost("http://hdwing.com/takelogin.php");
 			        List<NameValuePair> params = new ArrayList<NameValuePair>();
-			        params.add(new BasicNameValuePair("username", "jokert"));
-			        params.add(new BasicNameValuePair("password", "361722"));
+			        params.add(new BasicNameValuePair("username", "youaccount"));
+			        params.add(new BasicNameValuePair("password", "yourpassword"));
 			        params.add(new BasicNameValuePair("code", codenum));
 			        httppost.setEntity(new UrlEncodedFormEntity(params));
 			        
